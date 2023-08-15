@@ -1,0 +1,211 @@
+{
+    "types": {
+        "EIP712Domain": [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "version",
+                "type": "string"
+            },
+            {
+                "name": "chainId",
+                "type": "uint256"
+            },
+            {
+                "name": "verifyingContract",
+                "type": "address"
+            }
+        ],
+        "BulkOrder": [
+            {
+                "name": "tree",
+                "type": "OrderComponents[2]"
+            }
+        ],
+        "OrderComponents": [
+            {
+                "name": "offerer",
+                "type": "address"
+            },
+            {
+                "name": "zone",
+                "type": "address"
+            },
+            {
+                "name": "offer",
+                "type": "OfferItem[]"
+            },
+            {
+                "name": "consideration",
+                "type": "ConsiderationItem[]"
+            },
+            {
+                "name": "orderType",
+                "type": "uint8"
+            },
+            {
+                "name": "startTime",
+                "type": "uint256"
+            },
+            {
+                "name": "endTime",
+                "type": "uint256"
+            },
+            {
+                "name": "zoneHash",
+                "type": "bytes32"
+            },
+            {
+                "name": "salt",
+                "type": "uint256"
+            },
+            {
+                "name": "conduitKey",
+                "type": "bytes32"
+            },
+            {
+                "name": "counter",
+                "type": "uint256"
+            }
+        ],
+        "OfferItem": [
+            {
+                "name": "itemType",
+                "type": "uint8"
+            },
+            {
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "name": "identifierOrCriteria",
+                "type": "uint256"
+            },
+            {
+                "name": "startAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "endAmount",
+                "type": "uint256"
+            }
+        ],
+        "ConsiderationItem": [
+            {
+                "name": "itemType",
+                "type": "uint8"
+            },
+            {
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "name": "identifierOrCriteria",
+                "type": "uint256"
+            },
+            {
+                "name": "startAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "endAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "recipient",
+                "type": "address"
+            }
+        ]
+    },
+    "primaryType": "BulkOrder",
+    "domain": {
+        "name": "Seaport",
+        "version": "1.4",
+        "chainId": "1",
+        "verifyingContract": "0x00000000000001ad428e4906aE43D8F9852d0dD6"
+    },
+    "message": {
+        "tree": [
+            {
+                "offerer": "0xAFD2C82D0768A13d125ca5DA0695263840E68807",
+                "offer": [
+                    {
+                        "itemType": "2",
+                        "token": "0x33c6Eec1723B12c46732f7AB41398DE45641Fa42",
+                        "identifierOrCriteria": "2874",
+                        "startAmount": "1",
+                        "endAmount": "1"
+                    }
+                ],
+                "consideration": [
+                    {
+                        "itemType": "0",
+                        "token": "0x0000000000000000000000000000000000000000",
+                        "identifierOrCriteria": "0",
+                        "startAmount": "98512500000000000",
+                        "endAmount": "98512500000000000",
+                        "recipient": "0xAFD2C82D0768A13d125ca5DA0695263840E68807"
+                    },
+                    {
+                        "itemType": "0",
+                        "token": "0x0000000000000000000000000000000000000000",
+                        "identifierOrCriteria": "0",
+                        "startAmount": "7987500000000000",
+                        "endAmount": "7987500000000000",
+                        "recipient": "0x459fE44490075a2eC231794F9548238E99bf25C0"
+                    }
+                ],
+                "startTime": "1677803086",
+                "endTime": "1680481486",
+                "orderType": "0",
+                "zone": "0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+                "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "salt": "24446860302761739304752683030156737591518664810215442929811919162505174285446",
+                "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+                "totalOriginalConsiderationItems": "2",
+                "counter": "0"
+            },
+            {
+                "offerer": "0xAFD2C82D0768A13d125ca5DA0695263840E68807",
+                "offer": [
+                    {
+                        "itemType": "2",
+                        "token": "0x33c6Eec1723B12c46732f7AB41398DE45641Fa42",
+                        "identifierOrCriteria": "9889",
+                        "startAmount": "1",
+                        "endAmount": "1"
+                    }
+                ],
+                "consideration": [
+                    {
+                        "itemType": "0",
+                        "token": "0x0000000000000000000000000000000000000000",
+                        "identifierOrCriteria": "0",
+                        "startAmount": "98512500000000000",
+                        "endAmount": "98512500000000000",
+                        "recipient": "0xAFD2C82D0768A13d125ca5DA0695263840E68807"
+                    },
+                    {
+                        "itemType": "0",
+                        "token": "0x0000000000000000000000000000000000000000",
+                        "identifierOrCriteria": "0",
+                        "startAmount": "7987500000000000",
+                        "endAmount": "7987500000000000",
+                        "recipient": "0x459fE44490075a2eC231794F9548238E99bf25C0"
+                    }
+                ],
+                "startTime": "1677803086",
+                "endTime": "1680481486",
+                "orderType": "0",
+                "zone": "0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+                "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                "salt": "24446860302761739304752683030156737591518664810215442929801668426503904856346",
+                "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+                "totalOriginalConsiderationItems": "2",
+                "counter": "0"
+            }
+        ]
+    }
+}

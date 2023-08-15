@@ -1,0 +1,154 @@
+{
+    "types": {
+        "EIP712Domain": [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "version",
+                "type": "string"
+            },
+            {
+                "name": "chainId",
+                "type": "uint256"
+            },
+            {
+                "name": "verifyingContract",
+                "type": "address"
+            }
+        ],
+        "OrderComponents": [
+            {
+                "name": "offerer",
+                "type": "address"
+            },
+            {
+                "name": "zone",
+                "type": "address"
+            },
+            {
+                "name": "offer",
+                "type": "OfferItem[]"
+            },
+            {
+                "name": "consideration",
+                "type": "ConsiderationItem[]"
+            },
+            {
+                "name": "orderType",
+                "type": "uint8"
+            },
+            {
+                "name": "startTime",
+                "type": "uint256"
+            },
+            {
+                "name": "endTime",
+                "type": "uint256"
+            },
+            {
+                "name": "zoneHash",
+                "type": "bytes32"
+            },
+            {
+                "name": "salt",
+                "type": "uint256"
+            },
+            {
+                "name": "conduitKey",
+                "type": "bytes32"
+            },
+            {
+                "name": "counter",
+                "type": "uint256"
+            }
+        ],
+        "OfferItem": [
+            {
+                "name": "itemType",
+                "type": "uint8"
+            },
+            {
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "name": "identifierOrCriteria",
+                "type": "uint256"
+            },
+            {
+                "name": "startAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "endAmount",
+                "type": "uint256"
+            }
+        ],
+        "ConsiderationItem": [
+            {
+                "name": "itemType",
+                "type": "uint8"
+            },
+            {
+                "name": "token",
+                "type": "address"
+            },
+            {
+                "name": "identifierOrCriteria",
+                "type": "uint256"
+            },
+            {
+                "name": "startAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "endAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "recipient",
+                "type": "address"
+            }
+        ]
+    },
+    "primaryType": "OrderComponents",
+    "domain": {
+        "name": "Seaport",
+        "version": "1.1",
+        "chainId": "1",
+        "verifyingContract": "0x00000000006c3852cbEf3e08E8dF289169EdE581"
+    },
+    "message": {
+        "offerer": "0xcA1a218397f00ef0549e2555031a24B906200207",
+        "offer": [
+            {
+                "itemType": "2",
+                "token": "0xB852c6b5892256C264Cc2C888eA462189154D8d7",
+                "identifierOrCriteria": "3377",
+                "startAmount": "1",
+                "endAmount": "1"
+            }
+        ],
+        "consideration": [
+            {
+                "itemType": "1",
+                "token": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "identifierOrCriteria": "0",
+                "startAmount": "3700000000000000000",
+                "endAmount": "3700000000000000000",
+                "recipient": "0xcA1a218397f00ef0549e2555031a24B906200207"
+            }
+        ],
+        "startTime": "1675151142",
+        "endTime": "1676015142",
+        "orderType": "2",
+        "zone": "0x110b2B128A9eD1be5Ef3232D8e4E41640dF5c2Cd",
+        "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "salt": "24446860302761739304752683030156737591518664810215442929818316022741225326226",
+        "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+        "totalOriginalConsiderationItems": "1",
+        "counter": "0"
+    }
+}

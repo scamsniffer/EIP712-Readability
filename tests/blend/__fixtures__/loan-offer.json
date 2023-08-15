@@ -1,0 +1,70 @@
+{
+    "types": {
+        "LoanOffer": [
+            {
+                "name": "lender",
+                "type": "address"
+            },
+            {
+                "name": "collection",
+                "type": "address"
+            },
+            {
+                "name": "totalAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "minAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "maxAmount",
+                "type": "uint256"
+            },
+            {
+                "name": "auctionDuration",
+                "type": "uint256"
+            },
+            {
+                "name": "salt",
+                "type": "uint256"
+            },
+            {
+                "name": "expirationTime",
+                "type": "uint256"
+            },
+            {
+                "name": "rate",
+                "type": "uint256"
+            },
+            {
+                "name": "oracle",
+                "type": "address"
+            },
+            {
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ]
+    },
+    "domain": {
+        "name": "Blend",
+        "version": "1.0",
+        "chainId": 1,
+        "verifyingContract": "0x29469395eaf6f95920e59f858042f0e28d98a20b"
+    },
+    "primaryType": "LoanOffer",
+    "message": {
+        "lender": "0xB66DDd73464053ba6E0753ad3003EEf9578040fF",
+        "collection": "0x9C23Eb4E6a9490Af77a5CB1f3d2BA579Ad17b1fc",
+        "totalAmount": "1",
+        "minAmount": 0,
+        "maxAmount": "1",
+        "auctionDuration": 9000,
+        "salt": "265875887785256855606558013756560384533",
+        "expirationTime": "1686117871",
+        "rate": 0,
+        "oracle": "0xB66DDd73464053ba6E0753ad3003EEf9578040fF",
+        "nonce": "0"
+    }
+}

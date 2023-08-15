@@ -1,0 +1,98 @@
+{
+    "types": {
+        "MakerOrder": [
+            {
+                "name": "isOrderAsk",
+                "type": "bool"
+            },
+            {
+                "name": "signer",
+                "type": "address"
+            },
+            {
+                "name": "collection",
+                "type": "address"
+            },
+            {
+                "name": "price",
+                "type": "uint256"
+            },
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "name": "strategy",
+                "type": "address"
+            },
+            {
+                "name": "currency",
+                "type": "address"
+            },
+            {
+                "name": "nonce",
+                "type": "uint256"
+            },
+            {
+                "name": "startTime",
+                "type": "uint256"
+            },
+            {
+                "name": "endTime",
+                "type": "uint256"
+            },
+            {
+                "name": "minPercentageToAsk",
+                "type": "uint256"
+            },
+            {
+                "name": "params",
+                "type": "bytes"
+            }
+        ],
+        "EIP712Domain": [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "version",
+                "type": "string"
+            },
+            {
+                "name": "chainId",
+                "type": "uint256"
+            },
+            {
+                "name": "verifyingContract",
+                "type": "address"
+            }
+        ]
+    },
+    "domain": {
+        "name": "LooksRareExchange",
+        "version": "1",
+        "chainId": "1",
+        "verifyingContract": "0x59728544b08ab483533076417fbbb2fd0b17ce3a"
+    },
+    "primaryType": "MakerOrder",
+    "message": {
+        "isOrderAsk": true,
+        "signer": "0xAFD2C82D0768A13d125ca5DA0695263840E68807",
+        "collection": "0x33c6eec1723b12c46732f7ab41398de45641fa42",
+        "price": "1000000000000000000",
+        "tokenId": "2874",
+        "amount": "1",
+        "strategy": "0x579af6fd30bf83a5ac0d636bc619f98dbdeb930c",
+        "currency": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "nonce": "0",
+        "startTime": "1675597723",
+        "endTime": "1675856809",
+        "minPercentageToAsk": "9800",
+        "params": "0x"
+    }
+}

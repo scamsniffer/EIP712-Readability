@@ -1,0 +1,113 @@
+{
+    "types": {
+        "Order": [
+            {
+                "name": "trader",
+                "type": "address"
+            },
+            {
+                "name": "side",
+                "type": "uint8"
+            },
+            {
+                "name": "matchingPolicy",
+                "type": "address"
+            },
+            {
+                "name": "collection",
+                "type": "address"
+            },
+            {
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "name": "amount",
+                "type": "uint256"
+            },
+            {
+                "name": "paymentToken",
+                "type": "address"
+            },
+            {
+                "name": "price",
+                "type": "uint256"
+            },
+            {
+                "name": "listingTime",
+                "type": "uint256"
+            },
+            {
+                "name": "expirationTime",
+                "type": "uint256"
+            },
+            {
+                "name": "fees",
+                "type": "Fee[]"
+            },
+            {
+                "name": "salt",
+                "type": "uint256"
+            },
+            {
+                "name": "extraParams",
+                "type": "bytes"
+            },
+            {
+                "name": "nonce",
+                "type": "uint256"
+            }
+        ],
+        "Fee": [
+            {
+                "name": "rate",
+                "type": "uint16"
+            },
+            {
+                "name": "recipient",
+                "type": "address"
+            }
+        ],
+        "EIP712Domain": [
+            {
+                "name": "name",
+                "type": "string"
+            },
+            {
+                "name": "version",
+                "type": "string"
+            },
+            {
+                "name": "chainId",
+                "type": "uint256"
+            },
+            {
+                "name": "verifyingContract",
+                "type": "address"
+            }
+        ]
+    },
+    "domain": {
+        "name": "Blur Exchange",
+        "version": "1.0",
+        "chainId": "1",
+        "verifyingContract": "0x000000000000ad05ccc4f10045630fb830b95127"
+    },
+    "primaryType": "Order",
+    "message": {
+        "trader": "0xAFD2C82D0768A13d125ca5DA0695263840E68807",
+        "side": "0",
+        "matchingPolicy": "0x0000000000b92d5d043faf7cecf7e2ee6aaed232",
+        "collection": "0x34d85c9cdeb23fa97cb08333b511ac86e1c4e258",
+        "tokenId": "0",
+        "amount": "1",
+        "paymentToken": "0x0000000000a39bb272e79075ade125fd351887ac",
+        "price": "20000000000000000",
+        "listingTime": "1675589812",
+        "expirationTime": "1707125811",
+        "fees": [],
+        "salt": "192177168125575755015436204273785191085",
+        "extraParams": "0x01",
+        "nonce": "0"
+    }
+}
